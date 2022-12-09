@@ -1,5 +1,24 @@
 {
   "dependencies": {
     "fs": "^0.0.1-security"
-  }
+  },
+  "name": "production_code",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wesleyweitianqi/production_code.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wesleyweitianqi/production_code/issues"
+  },
+  "homepage": "https://github.com/wesleyweitianqi/production_code#readme",
+  "description": ""
 }

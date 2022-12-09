@@ -8,7 +8,10 @@ const fileOps = async() => {
     for (let i in alllines) {
       if (alllines[i].includes("M03")) {
         if (alllines[i-1].includes("G70")) {
-          alllines[i-1] = alllines[i-1].replace(/\.\d*/, ".48")
+          let regx= /\.\d*/
+          let match = alllines[i-1].match(regx)[0].substring(1)
+          let newValue = (parseInt(match)-10).toString()
+          alllines[i-1] = alllines[i-1].replace(/\.\d*/, newValue)
         }
       }
     }
